@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 michael20050413-bot
 """本地结构检查与协议模拟；不连接任何真实 BOT。"""
 from pathlib import Path
 import hashlib

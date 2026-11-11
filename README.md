@@ -61,3 +61,11 @@ flowchart TD
 运行 `python3 scripts/validate.py` 检查本地相对链接、技能基本格式、模板字段，以及两轮状态和已送达断线去重的模拟。它不连接真实 BOT，不证明真实调度或端到端运行成功。[验证记录](VALIDATION.md) 区分本地示例验证与实际发布证据。
 
 仓库仅含虚构示例。真实对话链接、任务 ID、本机路径、课程材料、凭据、运行日志与用户草稿保留在各自私人项目，勿提交到工具包仓库（私有仓库也同样遵守）。
+
+## 许可证与署名
+
+欢迎使用、修改和分享。教程、模板、示例文本和 skill 采用 CC BY 4.0，分享时请注明原作者、原仓库和许可证，并标明修改。Python 验证脚本采用 MIT，分发时请保留版权和许可声明。完整条款见[许可证与适用范围](LICENSE.md)。
+
+分享改编版时可以复制这句，并填上你的改动：
+
+> 本项目改编自 [michael20050413-bot 的 ChatGPT → Grok BOT → dots → Codex 工作流工具包](https://github.com/michael20050413-bot/chatgpt-grokbot-codex-workflow)。原文档采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh-hans)。本版修改了 ______。
