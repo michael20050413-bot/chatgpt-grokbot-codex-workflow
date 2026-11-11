@@ -33,7 +33,7 @@ class Relay:
             if not next_instruction:
                 raise ValueError('缺少完整下一轮指令')
             self.round += 1
-            self.send('to-weasel', next_instruction)
+            self.send('to-dots', next_instruction)
         elif action == '完成':
             self.polling = False
         elif action not in ('待材料', '待用户决定'):
@@ -68,9 +68,9 @@ def main():
     else:
         raise AssertionError('完成后不得继续')
     d = Relay()
-    d.send('to-weasel', '完整任务书', disconnect=True)
+    d.send('to-dots', '完整任务书', disconnect=True)
     assert not d.receipts
-    assert d.send('to-weasel', '完整任务书') == 'already-received'
+    assert d.send('to-dots', '完整任务书') == 'already-received'
     assert d.sends == 1 and len(d.receipts) == 1
     print('PASS: 相对链接、skill基本格式、四项模板/两段话、两轮继续与停止、断线已送达去重')
 
